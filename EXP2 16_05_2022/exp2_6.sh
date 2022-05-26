@@ -1,16 +1,14 @@
 echo "How many numbers do you want of Fibonacci series ?"
-read n
-x=0
-y=1
-i=2
-echo "Fibonacci Series up to $n terms :: "
-echo "$x"
-echo "$y"
-while [ $i -lt $n ]
+read n;
+f=0;
+s=1;
+echo "The Fibonacci series up to $n term:";
+echo "$f";
+echo  "$s";
+for((i=2;i<=n;i++))
 do
-i=`expr $i + 1 `
-z=`expr $x + $y `
-echo "$z"
-x=$y
-y=$z
+fib=$((f+s));
+f=$s;
+s=$fib;
+echo "$fib";
 done
