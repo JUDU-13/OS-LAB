@@ -44,7 +44,7 @@ printf("DONE\n");
 printf("Removing shared memory Segment\n");
 
 	if(shmctl(shmid,IPC_RMID,0)==-1)
-		printf("Can“t Remove Shared memory Segment\n");
+		printf("Can't Remove Shared memory Segment\n");
 	else
 		printf("Removed Successfully\n");
 }
